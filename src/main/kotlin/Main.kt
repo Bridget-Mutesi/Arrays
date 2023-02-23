@@ -1,13 +1,13 @@
 fun main(){
-    countries()
+    countries("Nairobi","Kampala","Kigali","Burindi")
     city()
     number()
     add("Rita","Mercy","Abi")
 
 
 }
-fun countries(){
-    var detail = arrayOf("Nairobi","Kampala","Kigali","Burindi")
+fun countries(nam1:String,nam2:String,nam3:String,nam4:String){
+    var detail = arrayOf(nam1,nam2,nam3,nam4)
     println(detail.contentToString())
 }
 fun city(){
@@ -25,9 +25,11 @@ fun number(){
 
 
 
+
 }
-fun add(tag1:String,tag2:String,tag3:String):Array<String>{
-     return arrayOf(tag1,tag2,tag3)
+fun add(tag1:String,tag2:String,tag3:String):String{
+     var names = arrayOf(tag1,tag2,tag3)
+    return names.contentToString()
 }
 
 
